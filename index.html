@@ -22,23 +22,61 @@
                 <th>Read Status</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>10X Rule</td>
-                <td>Grant Cardone</td>
-                <td>250</td>
-                <td>Not Read</td>
-              </tr>
-              <tr>
-                <td>48 Laws</td>
-                <td>Robert Greene</td>
-                <td>400</td>
-                <td>Not Read</td>
-              </tr>
-            </tbody>
+            <tbody></tbody>
           </table>
+          <div class="blur-container">
+            <div class="form-container hidden">
+              <button class="close-form-btn">X</button>
+              <h1>Log New Book</h1>
+              <form>
+                <div>
+                  <label for="title">Title: <span>*</span> </label>
+                  <input type="text" id="title" placeholder="Title" required />
+                </div>
+                <div>
+                  <label for="author">Author: <span>*</span> </label>
+                  <input
+                    type="text"
+                    id="author"
+                    placeholder="Author"
+                    required />
+                </div>
+                <div>
+                  <label for="pages">Pages: <span>*</span></label>
+                  <input
+                    type="number"
+                    id="pages"
+                    placeholder="Pages"
+                    required />
+                </div>
+                <fieldset>
+                  <legend>Have you read this book? <span>*</span></legend>
+                  <label for="read-yes"
+                    >Read:
+                    <input
+                      type="radio"
+                      name="read-bool"
+                      id="read-yes"
+                      value="Read"
+                      required
+                  /></label>
+                  <label for="read-no"
+                    >Not Read:
+                    <input
+                      type="radio"
+                      name="read-bool"
+                      id="read-no"
+                      value="Not Read"
+                      required />
+                  </label>
+                </fieldset>
+                <button type="button" id="log-book">Log Book</button>
+              </form>
+            </div>
+          </div>
         </div>
       </main>
+
       <footer>
         <p>
           Built by
